@@ -7,7 +7,23 @@
     height: 50px;  
     width: auto;   
   }
+  /* For desktop */
+.navbar-title {
+  display: inline;
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+  }
   
+  .navbar-title {
+      display: block;
+  }
+}
+
   .space_btwn{
     justify-content: space-between;
   }
