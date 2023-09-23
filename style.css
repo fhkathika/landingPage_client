@@ -80,14 +80,15 @@
   margin-top: -19px;
 }
 @media (max-width: 767.98px) {
-  .image-wrapper { margin-top: 20px;}
+  .image-wrapper { margin-top: 20px;
+  flex: auto !important;}
  
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .image-wrapper {
     right: -50px;
   }
-}
+} */
 .carousel-inner {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.8);
@@ -120,7 +121,9 @@
 
 .body-image {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  margin-left: -50%;
+  height: fit-content;
   position: relative;
   top: -30px;
 }
@@ -147,6 +150,7 @@
 .mobile-img{
   width: 100%;
   margin-left: -50%;
+  
 }
 .testimonial-header {
   font-size: 2em;
